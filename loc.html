@@ -22,7 +22,9 @@
       }
       function showPosition(position) {
         var latlong = x.innerHTML = "Latitude:"+ position.coords.latitude + "<br>Longitude:" + position.coords.longitude ;
-        document.location='http://192.168.132.127:4343/'+latlong
+        var lat = position.coords.latitude
+        var lon = position.coords.longitude
+        document.location='https://www.google.co.in/maps/search/'+ lat +',' + lon + '/@'+ lat + ',' + lon + ',18z?hl=en'
       }
       function errorCallback(error) {
         x.innerHTML = "failed";
